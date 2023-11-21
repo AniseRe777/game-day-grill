@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Day Grill</title>
+	<link rel="stylesheet" href="https://use.typekit.net/rig8hkd.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="Logos/logo_icon_transparent.png">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Top Navigation -->
+	<div class="navbar">
+		<img src="Logos/logo_text2_transparent.png" alt="logo" height="30">
+		<a href="index.html#home">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="index.html#events">Events</a>
+		<a href="index.html#reservations">Reservations</a>
+		<a href="index.html#about-us">About Us</a>
+		<a href="#" style="float: right; background-color: #a3000f;">Order Now</a>
+	</div>
+	
+<!-- Hero Image -->
+	<div class="hero-image" id="home">
+		<div class="hero-text">
+			<h1>Submission Information</h1>
+			<p class="paragraph-alignment">Chapter name: Burley High School Chater</p>
+			<p class="paragraph-alignment">Team Members: Keileigh Tolman, Charmaine Lowe, Brooklyn Poulson, Lincoln Peterson</p>
+			<p class="paragraph-alignment">Theme: A website for a new restaurant, the Game Day Grill.</p>
+			<p class="paragraph-alignment">School: Burley High School</p>
+			<p class="paragraph-alignment">City: Burley</p>
+			<p class="paragraph-alignment">State: Idaho</p>
+			<p class="paragraph-alignment">Year: 2023-2024</p>
+			<a href="index.html"><button>Return to Home Page</button></a>
+		</div>
+	</div>
+	
+<!-- Socials Bar -->
+	<div class="icon-bar">
+			<a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+			<a href="mailto:gamedaygrill208@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+	</div>
+	
+<!-- Scroll to top -->
+	<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+	
+<script>
+	// Smooth scrolling effect
+	document.addEventListener("DOMContentLoaded", function () {
+		const links = document.querySelectorAll("a");
+		links.forEach((link) => {
+			link.addEventListener("click", smoothScroll);
+		});
+
+		function smoothScroll(e) {
+			e.preventDefault();
+
+			const targetId = this.getAttribute("href").substring(1);
+			const targetElement = document.getElementById(targetId);
+
+			if (targetElement) {
+				const offsetTop = targetElement.offsetTop;
+
+				window.scrollTo({
+					top: offsetTop,
+					behavior: "smooth",
+				});
+			}
+		}
+	});
+
+	
+	// Scroll to top button
+        const scrollToTopButton = document.getElementById('scrollToTopBtn');
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        scrollToTopButton.addEventListener('click', scrollToTop);
+        window.addEventListener('scroll', function () {
+            if (document.documentElement.scrollTop > 100) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+</script>
+</body>
+</html>
