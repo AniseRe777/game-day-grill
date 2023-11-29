@@ -152,7 +152,7 @@ p {
 }
 
 /* Basic button styling */
-.btn {
+a.btn {
 	border: none;
 	color: #ffffff;
 	background-color: #d71e2d;
@@ -163,11 +163,11 @@ p {
 	text-align: center;
 }
 
-.btn:hover {
+a.btn:hover {
 	background-color: #a3000f;
 }
 
-.btn a {
+a.btn {
 	color: #ffffff;
 	text-decoration: none;
 }
