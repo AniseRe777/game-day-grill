@@ -161,6 +161,7 @@ a.btn {
 	cursor: pointer;
 	display: inline-block;
 	text-align: center;
+	font-family: "lato", sans-serif;
 }
 
 a.btn:hover {
