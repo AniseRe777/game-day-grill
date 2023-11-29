@@ -82,7 +82,7 @@ p {
 	font-size: 20px;
 }
 	
-.hero-text button {
+.hero-text a.btn {
 	border: none;
 	outline: 0;
 	display: inline-block;
@@ -93,7 +93,7 @@ p {
 	cursor: pointer;
 }
 
-.hero-text button:hover {
+.hero-text a.btn:hover {
   background-color: #a3000f;
   color: white;
 }
