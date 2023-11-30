@@ -168,11 +168,6 @@ a.btn:hover {
 	background-color: #a3000f;
 }
 
-a.btn {
-	color: #ffffff;
-	text-decoration: none;
-}
-
 /* Hours */
 .hour-section {
 	display: flex;
