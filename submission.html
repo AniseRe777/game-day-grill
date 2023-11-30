@@ -31,7 +31,7 @@
 			<p class="paragraph-alignment">City: Burley</p>
 			<p class="paragraph-alignment">State: Idaho</p>
 			<p class="paragraph-alignment">Year: 2023-2024</p>
-			<a href="https://anisere777.github.io/game-day-grill/" target="_blank" class="btn">Return to Home Page</a>
+			<a href="https://anisere777.github.io/game-day-grill/" class="btn">Return to Home Page</a>
 		</div>
 	</div>
 	
@@ -47,31 +47,6 @@
 	<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 	
 <script>
-	// Smooth scrolling effect
-	document.addEventListener("DOMContentLoaded", function () {
-		const links = document.querySelectorAll("a");
-		links.forEach((link) => {
-			link.addEventListener("click", smoothScroll);
-		});
-
-		function smoothScroll(e) {
-			e.preventDefault();
-
-			const targetId = this.getAttribute("href").substring(1);
-			const targetElement = document.getElementById(targetId);
-
-			if (targetElement) {
-				const offsetTop = targetElement.offsetTop;
-
-				window.scrollTo({
-					top: offsetTop,
-					behavior: "smooth",
-				});
-			}
-		}
-	});
-
-	
 	// Scroll to top button
         const scrollToTopButton = document.getElementById('scrollToTopBtn');
         function scrollToTop() {
