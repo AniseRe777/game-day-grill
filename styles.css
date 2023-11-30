@@ -162,6 +162,7 @@ a.btn {
 	display: inline-block;
 	text-align: center;
 	font-family: "lato", sans-serif;
+	text-decoration: none;
 }
 
 a.btn:hover {
