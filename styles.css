@@ -167,6 +167,7 @@ a.btn {
 
 a.btn:hover {
 	background-color: #a3000f;
+	color: #ffffff;
 }
 
 /* Hours */
