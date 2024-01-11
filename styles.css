@@ -364,80 +364,55 @@ a.btn:hover {
 	background-color: #a3000f;
 }
 
-/* Menu Section*/
-.menu-container{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+/* Menu Styling */
+.menu-container {
+	max-width: 85%;
+	margin: 50px auto;
+	background-color: #222222;
+	overflow: hidden;
 }
 
-.menu-item {
-	width: 40%;
-	margin: 10px;
+.menu-links {
 	display: flex;
-	align-items: center;
 }
 
-.menu-item img {
-	width: 50%;
-	border-radius: 5px;
-}
-
-.menu-item-text {
-	text-align: left;
-	padding: 10px;
+.menu-link {
 	flex: 1;
-	margin: 5px 0;
-	max-width: 500px;
-}
-
-.button-group {
-	display: flex;
-	justify-content: center;
-	margin: 20px;
-}
-
-.menu-button {
-	padding: 10px 20px;
+	padding: 15px;
+	text-align: center;
 	background-color: #d71e2d;
 	color: #f9f9f9;
 	text-decoration: none;
-	font-family: "lato", sans-serif;
-	border: none;
-	margin-right: 0;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
-.menu-button:last-child {
-	margin-right: 0;
-}
-
-.menu-button:hover {
+.menu-link:hover {
 	background-color: #a3000f;
 }
 
-.order-button {
-	position: fixed;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1000;
-}
-
-.order-button .btn {
-	background-color: #d71e2d;
+.menu-section {
+	display: none;
+	padding: 20px;
+	background-color: #222222;
 	color: #f9f9f9;
-	padding: 14px 20px;
-	font-size: 18px;
-	text-decoration: none;
-	border-radius: 5px;
+	animation: fadeEffect 1s;
+}
+	
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-.order-button .btn:hover {
-	background-color: #a3000f;
+.menu-section.active {
+	display: block;
 }
 
-.paragraph-alignment {
+.center {
+	text-align: center;
+}
+
+.center-paragraph {
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
@@ -447,7 +422,33 @@ a.btn:hover {
 	text-align: center;
 }
 
-em {
-	font-family: "Lato", sans-serif;
-	font-size: 18px;
+.menu-items {
+	text-align: left;
+	padding: 20px;
+	flex: 1;
+	margin: 5px 0;
+	width: 90%;
+	display: flex; /* Added to create a flex container */
+	align-items: center; /* Center align items vertically */
+}
+
+.menu-image {
+	width: 25%;
+	border-radius: 5px;
+}
+
+.price-tag {
+	background-color: #000000;
+	color: #f9f9f9;
+	padding: 4px 8px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.menu-item-text {
+	text-align: left;
+	padding: 20px;
+	flex: 1;
+	margin: 5px 0;
+	width: 100%;
 }
