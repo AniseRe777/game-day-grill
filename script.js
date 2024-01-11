@@ -14,3 +14,16 @@
                 scrollToTopButton.style.display = 'none';
             }
         });
+
+// For switching between sections
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.menu-section');
+    sections.forEach(section => {
+      section.classList.remove('active');
+    });
+
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.add('active');
+  }
