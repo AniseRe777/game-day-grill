@@ -382,6 +382,7 @@ a.btn:hover {
 	text-align: center;
 	background-color: #d71e2d;
 	color: #f9f9f9;
+	font-family: "lato", sans-serif;
 	text-decoration: none;
 	cursor: pointer;
 	transition: background-color 0.3s;
