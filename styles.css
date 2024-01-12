@@ -453,3 +453,29 @@ a.btn:hover {
 	margin: 5px 0;
 	width: 100%;
 }
+
+/* Responsive Styling */
+/* Phone Styling */
+@media only screen and (max-width: 600px;) {
+	.hero-text {
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	.image-box {
+		flex-direction: column;
+	}
+
+	.box {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+/* Tablet Styling */
+@media only screen and (min-width: 601px;) and (max-width: 1024px;) {
+	.hero-text {
+		padding: 20px;
+		font-size: 18px;
+	}
+}
