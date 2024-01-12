@@ -45,7 +45,8 @@ p {
 .navbar img {
 	float: left;
 	margin: 10px 20px;
-	height: 30;	
+	height: 30;
+	max-width: 100%;
 }
 
 .highlight-link {
@@ -470,6 +471,28 @@ a.btn:hover {
 		flex-direction: column;
 		text-align: center;
 	}
+
+	/* Mobile Menu Styles */
+	.navbar-links {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: #d71e2d;
+	}
+
+	.navbar-links a {
+		padding: 15px;
+		text-align: center;
+		color: #f9f9f9;
+		text-decoration: none;
+	}
+
+	.navbar-links a:hover {
+		background-color: #a3000f;
+	}
 }
 
 /* Tablet Styling */
@@ -478,4 +501,13 @@ a.btn:hover {
 		padding: 20px;
 		font-size: 18px;
 	}
+}
+
+.mobile-menu-icon {
+	display: none;
+	cursor: pointer;
+}
+
+.navbar-links {
+	display: flex;
 }
