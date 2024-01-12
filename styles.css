@@ -455,6 +455,15 @@ a.btn:hover {
 	width: 100%;
 }
 
+.mobile-menu-icon {
+	display: none;
+	cursor: pointer;
+}
+
+.navbar-links {
+	display: flex;
+}
+
 /* Responsive Styling */
 /* Phone Styling */
 @media only screen and (max-width: 750px;) {
@@ -503,11 +512,3 @@ a.btn:hover {
 	}
 }
 
-.mobile-menu-icon {
-	display: none;
-	cursor: pointer;
-}
-
-.navbar-links {
-	display: flex;
-}
