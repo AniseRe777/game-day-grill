@@ -1,3 +1,13 @@
+// Mobile Menu
+document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        mobileMenuIcon.addEventListener('click', function () {
+                navbarLinks.classList.toggle('active');
+        });
+});
+
 // Scroll to top button
         const scrollToTopButton = document.getElementById('scrollToTopBtn');
         function scrollToTop() {
