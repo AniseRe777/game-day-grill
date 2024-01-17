@@ -8,11 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-// Clickable Logo
+// Nav bar logo link
 	document.addEventListener("DOMContentLoaded", function () {
 		var logoImage = document.getElementById("logoImage");
 
 		if (logoImage) {
+			logoImage.addEventListener("mouseover", function () {
+				logoImage.classList.add("hovered");
+			});
+
+			logoImage.addEventListener("mouseout", function () {
+				logoImage.classList.remove("hovered");
+			});
+
 			logoImage.addEventListener("click", function (event) {
 				event.preventDefault();
 
