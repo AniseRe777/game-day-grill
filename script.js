@@ -10,32 +10,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Nav bar logo link
 	document.addEventListener("DOMContentLoaded", function () {
-		var logoImage = document.getElementById("logoImage");
-
-		if (logoImage) {
-			logoImage.addEventListener("mouseover", function () {
-				logoImage.classList.add("hovered");
-			});
-
-			logoImage.addEventListener("mouseout", function () {
-				logoImage.classList.remove("hovered");
-			});
-
-			logoImage.addEventListener("click", function (event) {
-				event.preventDefault();
-
-				var targetSection = document.getElementById("home");
-				if (targetSection) {
-					var offsetTop = targetSection.getBoundingClientRect().top + window.scrollY;
-
-					// Use smooth scroll
-					window.scrollTo({
-						top: offsetTop,
-						behavior: 'smooth'
-					});
-				}
-			});
-		}
+	    // Add an event listener to the logo image
+	    var logoImage = document.getElementById("logoImage");
+	
+	    if (logoImage) {
+	        logoImage.addEventListener("mouseover", function () {
+	            logoImage.classList.add("hovered");
+	        });
+	
+	        logoImage.addEventListener("mouseout", function () {
+	            logoImage.classList.remove("hovered");
+	        });
+	
+	        logoImage.addEventListener("click", function (event) {
+	            event.preventDefault();
+	
+	            // Determine the target section based on the current page
+	            var targetSectionId = "home";  // Default to home page
+	
+	            // Check if the current page is not the home page
+	            if (window.location.pathname !== "/game-day-grill/index.html") {
+	                // Update the target section for non-home pages
+	                targetSectionId = "home";
+	            }
+	
+	            var targetSection = document.getElementById(targetSectionId);
+	            if (targetSection) {
+	                var offsetTop = targetSection.getBoundingClientRect().top + window.scrollY;
+	
+	                // Use smooth scroll
+	                window.scrollTo({
+	                    top: offsetTop,
+	                    behavior: 'smooth'
+	                });
+	            }
+	        });
+	    }
 	});
 
 // Scroll to top button
