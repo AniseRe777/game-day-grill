@@ -13,18 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	    var logoImage = document.getElementById("logoImage");
 	
 	    if (logoImage) {
-	        // Add event listeners for mouseover and mouseout
 	        logoImage.addEventListener("mouseover", function() {
-	            // On mouseover, add the 'hovered' class
 	            logoImage.classList.add("hovered");
 	        });
 	
 	        logoImage.addEventListener("mouseout", function() {
-	            // On mouseout, remove the 'hovered' class
 	            logoImage.classList.remove("hovered");
 	        });
 	
-	        // Add a click event to navigate to the home page
 	        logoImage.addEventListener("click", function() {
 	            window.location.href = "index.html";
 	        });
