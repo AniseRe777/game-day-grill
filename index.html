@@ -21,10 +21,17 @@
   gtag('config', 'G-9F5FXLV13X');
 </script>
 <!-- Nav Bar -->
-	<div class="mobile-menu-icon">&#9776;</div>
 	<div class="navbar">
-		<img src="images/logo_text2_transparent.png" alt="logo" height="30">
-		<a href="index.html#home">Home</a>
+		<img id="logoImage" src="images/logo_text2_transparent.png" alt="logo" height="30">
+		<div class="dropdown">
+			<button class="dropbtn" href="index.html#home">Home
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="index.html#hours">Hours</a>
+				<a href="index.html#mission">Mission</a>
+			</div>
+		</div>
 		<a href="index.html#menu">Menu</a>
 		<a href="index.html#events">Events</a>
 		<a href="index.html#reservations">Reservations</a>
