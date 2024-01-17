@@ -517,6 +517,7 @@ a.btn:hover {
 
 /* Responsive Styling */
 /* Phone Styling */
+/*
 @media only screen and (max-width: 750px;) {
 	.hero-text {
 		padding: 10px;
@@ -532,7 +533,6 @@ a.btn:hover {
 		text-align: center;
 	}
 
-	/* Mobile Menu Styles */
 	.navbar {
 		display: none;
 		flex-direction: column;
@@ -558,12 +558,14 @@ a.btn:hover {
 		display: none;
 	}
 }
+*/
 
 /* Tablet Styling */
+/*
 @media only screen and (min-width: 751px;) and (max-width: 1024px;) {
 	.hero-text {
 		padding: 20px;
 		font-size: 18px;
 	}
 }
-
+*/
