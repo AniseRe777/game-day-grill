@@ -9,35 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Nav bar logo link
-	document.addEventListener("DOMContentLoaded", function () {
-	    // Add an event listener to the logo image
-	    var logoImage = document.getElementById("logoImage");
-	
-	    if (logoImage) {
-	        logoImage.addEventListener("mouseover", function () {
-	            logoImage.classList.add("hovered");
-	        });
-	
-	        logoImage.addEventListener("mouseout", function () {
-	            logoImage.classList.remove("hovered");
-	        });
-	
-	        logoImage.addEventListener("click", function (event) {
-	            event.preventDefault();
-	
-	            // Target the "home" section directly
-	            var targetSection = document.getElementById("home");
-	            if (targetSection) {
-	                var offsetTop = targetSection.getBoundingClientRect().top + window.scrollY;
-	
-	                // Use smooth scroll
-	                window.scrollTo({
-	                    top: offsetTop,
-	                    behavior: 'smooth'
-	                });
-	            }
-	        });
-	    }
+	// JavaScript to make the logo clickable
+	document.addEventListener("DOMContentLoaded", function() {
+		var logoImage = document.getElementById("logoImage");
+
+			if (logoImage) {
+                logoImage.addEventListener("click", function() {
+                    // Replace "your-url-here" with the actual URL you want to navigate to
+                    window.location.href = "index.html";
+				});
+			}
 	});
 
 
