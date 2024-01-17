@@ -25,16 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	        logoImage.addEventListener("click", function (event) {
 	            event.preventDefault();
 	
-	            // Determine the target section based on the current page
-	            var targetSectionId = "home";  // Default to home page
-	
-	            // Check if the current page is not the home page
-	            if (window.location.pathname !== "/game-day-grill/index.html") {
-	                // Update the target section for non-home pages
-	                targetSectionId = "home";
-	            }
-	
-	            var targetSection = document.getElementById(targetSectionId);
+	            // Target the "home" section directly
+	            var targetSection = document.getElementById("home");
 	            if (targetSection) {
 	                var offsetTop = targetSection.getBoundingClientRect().top + window.scrollY;
 	
@@ -47,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	        });
 	    }
 	});
+
 
 // Scroll to top button
         const scrollToTopButton = document.getElementById('scrollToTopBtn');
