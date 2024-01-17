@@ -48,6 +48,10 @@ p {
 	height: 30px;	
 }
 
+#logoImage.hovered {
+	cursor: pointer;
+}
+
 .highlight-link {
 	float: right;
 	color: #d71e2d;
