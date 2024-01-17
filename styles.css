@@ -553,6 +553,10 @@ a.btn:hover {
 	.navbar a:hover {
 		background-color: #a3000f;
 	}
+
+	.logo {
+		display: none;
+	}
 }
 
 /* Tablet Styling */
