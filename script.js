@@ -8,6 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
+// Clickable Logo
+	document.addEventListener("DOMContentLoaded", function () {
+		var logoImage = document.getElementById("logoImage");
+
+		if (logoImage) {
+			logoImage.addEventListener("click", function (event) {
+				event.preventDefault();
+
+				var targetSection = document.getElementById("home");
+				if (targetSection) {
+					var offsetTop = targetSection.getBoundingClientRect().top + window.scrollY;
+
+					// Use smooth scroll
+					window.scrollTo({
+						top: offsetTop,
+						behavior: 'smooth'
+					});
+				}
+			});
+		}
+	});
+
 // Scroll to top button
         const scrollToTopButton = document.getElementById('scrollToTopBtn');
         function scrollToTop() {
