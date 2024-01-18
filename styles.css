@@ -2,7 +2,7 @@ body, html {
 	height: 100%;
 	margin: 0;
 	background-color: #333333;
-    	color: #f9f9f9;
+    color: #ffffff;
 	scroll-behavior: smooth;
 }
 
@@ -98,7 +98,7 @@ p {
 }
 
 .dropdown-content a:hover {
-	background-color: #999999;
+	background-color: #d71e2d;
 }
 
 .dropdown:hover .dropdown-content {
@@ -126,7 +126,7 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: #f9f9f9;
+	color: white;
 	padding: 20px;
 	background-color: rgba(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0, 0.7);
@@ -139,7 +139,7 @@ p {
 	outline: 0;
 	display: inline-block;
 	padding: 10px 25px;
-	color: #f9f9f9;
+	color: #ffffff;
 	background-color: #d71e2d;
 	text-align: center;
 	cursor: pointer;
@@ -147,21 +147,22 @@ p {
 
 .hero-text a.btn:hover {
   background-color: #a3000f;
-  color: #f9f9f9;
+  color: white;
 }
 	
 .hero-text a {
 	text-decoration: none;
-	color: #f9f9f9;
+	color: white;
 	font-size: 16px;
 	font-family: "lato", sans-serif;
 }
 	
 .logo {
 	position: absolute;
-	bottom: 75px;
+	bottom: 10px;
 	left: 35px;
-	width: 15%;
+	/*width: 15%;*/
+	height: 110px;
 }
 
 /* Mission Section */
@@ -185,7 +186,7 @@ p {
 }
 
 /* Menu Section */
-.menu-section1 {
+.menu-section2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -206,7 +207,7 @@ p {
 /* Basic button styling */
 a.btn {
 	border: none;
-	color: #f9f9f9;
+	color: #ffffff;
 	background-color: #d71e2d;
 	padding: 14px 16px;
 	font-size: 16px;
@@ -214,12 +215,15 @@ a.btn {
 	display: inline-block;
 	text-align: center;
 	font-family: "lato", sans-serif;
-	text-decoration: none;
 }
 
 a.btn:hover {
 	background-color: #a3000f;
-	color: #f9f9f9;
+}
+
+a.btn {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 /* Hours */
@@ -263,11 +267,11 @@ a.btn:hover {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.7);
-    color: #f9f9f9;
+    color: white;
     padding: 10px;
     width: 100%;
     text-align: left;
-    d4font-size: 30px;
+	font-size: 20px;
 }
 	 
 .text-overlay h3, p {
@@ -305,7 +309,7 @@ a.btn:hover {
 	
 .reservation-text a {
 	text-decoration: none;
-	color: #f9f9f9;
+	color: #ffffff;
 }
 	
 .reservation-text i {
@@ -340,19 +344,19 @@ a.btn:hover {
 }
 	
 .center-link {
-	color: #f9f9f9;
+	color: #ffffff;
 }
 
 /* Footer */
 .footer {
 	text-align: center;
 	background-color: #000000;
-	color: #f9f9f9;
+	color: #ffffff;
 	padding: 50px;
 }
 	
 .footer a {
-	color: #f9f9f9;
+	color: #ffffff;
 	text-decoration: none;
 }
 	
@@ -377,12 +381,12 @@ a.btn:hover {
 }
 
 /* Individual colors on icons */
-.facebook {
-	background: #3B5998; 
-}
-
 .twitter {
   background: #55ACEE;
+}
+	
+.facebook {
+	background: #3B5998; 
 }
 
 .instagram {
@@ -399,7 +403,7 @@ a.btn:hover {
 	bottom: 20px;
 	right: 20px;
 	background-color: #D71E2D;
-	color: #f9f9f9;
+	color: #FFFFFF;
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
@@ -434,7 +438,6 @@ a.btn:hover {
 	text-align: center;
 	background-color: #d71e2d;
 	color: #f9f9f9;
-	font-family: "lato", sans-serif;
 	text-decoration: none;
 	cursor: pointer;
 	transition: background-color 0.3s;
@@ -505,67 +508,3 @@ a.btn:hover {
 	margin: 5px 0;
 	width: 100%;
 }
-
-.mobile-menu-icon {
-	display: none;
-	cursor: pointer;
-}
-
-.navbar-links {
-	display: flex;
-}
-
-/* Responsive Styling */
-/* Phone Styling */
-/*
-@media only screen and (max-width: 750px;) {
-	.hero-text {
-		padding: 10px;
-		font-size: 16px;
-	}
-
-	.image-box {
-		flex-direction: column;
-	}
-
-	.box {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.navbar {
-		display: none;
-		flex-direction: column;
-		position: absolute;
-		top: 60px;
-		left: 0;
-		width: 100%;
-		background-color: #d71e2d;
-	}
-
-	.navbar a {
-		padding: 15px;
-		text-align: center;
-		color: #f9f9f9;
-		text-decoration: none;
-	}
-
-	.navbar a:hover {
-		background-color: #a3000f;
-	}
-
-	.logo {
-		display: none;
-	}
-}
-*/
-
-/* Tablet Styling */
-/*
-@media only screen and (min-width: 751px;) and (max-width: 1024px;) {
-	.hero-text {
-		padding: 20px;
-		font-size: 18px;
-	}
-}
-*/
