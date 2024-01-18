@@ -8,23 +8,42 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-// Nav bar logo link
+// Nav Bar Logo Link
 	document.addEventListener("DOMContentLoaded", function() {
-	    var logoImage = document.getElementById("logoImage");
+		var logoImage = document.getElementById("logoImage");
+
+		if (logoImage) {
+			logoImage.addEventListener("mouseover", function() {
+				logoImage.style.cursor = 'pointer';
+			});
+
+			logoImage.addEventListener("mouseout", function() {
+				logoImage.style.cursor = 'default'; // Set back to default on mouseout
+			});
+
+			logoImage.addEventListener("click", function() {
+				window.location.href = "index.html";
+			});
+		}
+	});
 	
-	    if (logoImage) {
-	        logoImage.addEventListener("mouseover", function() {
-	            logoImage.classList.add("hovered");
-	        });
-	
-	        logoImage.addEventListener("mouseout", function() {
-	            logoImage.classList.remove("hovered");
-	        });
-	
-	        logoImage.addEventListener("click", function() {
-	            window.location.href = "index.html";
-	        });
-	    }
+// Home Link
+	document.addEventListener("DOMContentLoaded", function() {
+		var logoImage = document.getElementById("homeBtn");
+
+		if (logoImage) {
+			logoImage.addEventListener("mouseover", function() {
+				logoImage.style.cursor = 'pointer';
+			});
+
+			logoImage.addEventListener("mouseout", function() {
+				logoImage.style.cursor = 'default'; // Set back to default on mouseout
+			});
+
+			logoImage.addEventListener("click", function() {
+				window.location.href = "index.html";
+			});
+		}
 	});
 
 // Scroll to top button
