@@ -160,7 +160,11 @@ p {
 	font-size: 16px;
 	font-family: "lato", sans-serif;
 }
-	
+
+.hero-paragraph {
+	font-size: 20px;
+}
+
 .logo {
 	position: absolute;
 	bottom: 10px;
