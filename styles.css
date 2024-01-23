@@ -187,6 +187,7 @@ p {
 
 .mission-text p {
 	text-align: left;
+	font-size: 18px;
 }
 
 /* Menu Section */
@@ -206,6 +207,7 @@ p {
 	padding-right: 0;
 	display: block;
 	text-align: center;
+	font-size: 18px;
 }
 
 /* Basic button styling */
@@ -214,7 +216,7 @@ a.btn {
 	color: #ffffff;
 	background-color: #d71e2d;
 	padding: 14px 16px;
-	font-size: 16px;
+	font-size: 18px;
 	cursor: pointer;
 	display: inline-block;
 	text-align: center;
@@ -246,6 +248,7 @@ a.btn {
 	padding: 20px;
 	padding-left: 50px;
 	text-align: center;
+	font-size: 18px;
 }
 
 /* Events */
@@ -288,7 +291,7 @@ a.btn {
 
 .center h4 {
 	font-family: "lato", sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	padding: 0;
 }
 
@@ -309,6 +312,7 @@ a.btn {
 	padding-left: 50px;
 	text-align: left;
 	text-decoration: none;
+	font-size: 18px;
 }
 	
 .reservation-text a {
@@ -334,6 +338,7 @@ a.btn {
 	box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
 	border-radius: 5px;
 	background-color: #222222;
+	font-size: 18px;
 }
 
 .box img {
@@ -349,6 +354,7 @@ a.btn {
 	
 .center-link {
 	color: #ffffff;
+	font-family: "lato", sans-serif;
 }
 
 /* Footer */
@@ -357,6 +363,8 @@ a.btn {
 	background-color: #000000;
 	color: #ffffff;
 	padding: 50px;
+	font-size: 18px;
+	
 }
 	
 .footer a {
@@ -445,6 +453,7 @@ a.btn {
 	text-decoration: none;
 	cursor: pointer;
 	transition: background-color 0.3s;
+	font-family: "lato", sans-serif;
 }
 
 .menu-link:hover {
@@ -480,6 +489,7 @@ a.btn {
 	padding-right: 0;
 	display: block;
 	text-align: center;
+	font-size: 18px;
 }
 
 .menu-items {
@@ -488,8 +498,8 @@ a.btn {
 	flex: 1;
 	margin: 5px 0;
 	width: 90%;
-	display: flex; /* Added to create a flex container */
-	align-items: center; /* Center align items vertically */
+	display: flex;
+	align-items: center;
 }
 
 .menu-image {
@@ -511,4 +521,5 @@ a.btn {
 	flex: 1;
 	margin: 5px 0;
 	width: 100%;
+	font-size: 18px;
 }
