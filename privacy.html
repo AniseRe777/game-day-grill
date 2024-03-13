@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Day Grill Privacy Policy</title>
+	<link rel="stylesheet" href="https://use.typekit.net/rig8hkd.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="images/logo_icon_transparent.png">
+	<link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="jI4VxLtl2A_CuUZrl9qwUBLMZfy_Dq1kqwzJeGclrw0" />
+	<base href="/game-day-grill/">
+	<script src="script.js" defer></script>
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9F5FXLV13X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9F5FXLV13X');
+</script>
+<!-- Top Navigation -->
+	<div class="navbar">
+		<img src="Logos/logo_text2_transparent.png" alt="logo" height="30">
+		<a href="index.html#home">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="index.html#events">Events</a>
+		<a href="index.html#reservations">Reservations</a>
+		<a href="index.html#about-us">About Us</a>
+		<a href="#" style="float: right; background-color: #a3000f;">Order Now</a>
+	</div>
+	
+<!-- Hero Image -->
+	<div class="hero-image2" id="home">
+		<div class="hero-text2">
+			<h1>Privacy Policy</h1>
+			<i>Last updated: 3/5/2024</i>
+				<p>This Privacy Policy explains how Game Day Grill ("we," "us," or "our") collects, uses, discloses, and protects your personal information when you use our website https://anisere777.github.io/game-day-grill/index.html (the "Site") and the services offered through the Site.</p>
+			<h5>Information We Collect</h5>
+				<p>We may collect various types of information, including:</p>
+				<ul>
+					<li>Personal Information: When you use our Site, we may collect personally identifiable information such as your name, email address, and any other information you voluntarily provide.</li>
+					<li>Log Data: Our servers automatically record information ("Log Data") created by your use of the Site. Log Data may include information such as your IP address, browser type, operating system, the referring web page, pages visited, location, your mobile carrier, device information, and search terms.</li>
+				</ul>
+			<h5>Use of Information</h5>
+				<p>We use the collected information for various purposes, including but not limited to:</p>
+				<ul>
+					<li>Providing and maintaining the Site</li>
+					<li>Improving our services</li>
+					<li>Communicating with you</li>
+					<li>Analyzing usage patterns</li>
+				</ul>
+			<h5>Google Analytics</h5>
+				<p>We use Google Analytics to analyze the use of our Site. Google Analytics collects information such as your IP address, device information, and browsing behavior. This information is used to generate statistical reports for us.</p>
+				<p>For more information on how Google Analytics collects and processes data, please visit <a href="https://policies.google.com/privacy">Google's Privacy Policy.</a></p>
+			<h5>Opting Out of Google Analytics</h5>
+				<p>You can opt-out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on, available at <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on.</a></p>
+			<h5>Cookies</h5>
+				<p>We use cookies to collect information about your use of the Site. You can control cookies through your browser settings.</p>
+			<h5>Data Sharing</h5>
+				<p>We do not sell or share your personal information with third parties except as required by law.</p>
+			<h5>Changes to This Privacy Policy</h5>
+				<p>We reserve the right to update or change our Privacy Policy at any time. Your continued use of the Site after we post any modifications indicates your acceptance of those changes.</p>
+			<h5>Contact Us</h5>
+				<p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:gamedaygrill208@gmail.com">gamedaygrill208@gmail.com</a></p>
+		</div>
+	</div>
+	
+<!-- Socials Bar -->
+	<div class="icon-bar">
+			<a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+			<a href="mailto:gamedaygrill208@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+	</div>
+	
+<!-- Scroll to top -->
+	<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+	
+<script>
+	// Smooth scrolling effect
+	document.addEventListener("DOMContentLoaded", function () {
+		const links = document.querySelectorAll("a");
+		links.forEach((link) => {
+			link.addEventListener("click", smoothScroll);
+		});
+
+		function smoothScroll(e) {
+			e.preventDefault();
+
+			const targetId = this.getAttribute("href").substring(1);
+			const targetElement = document.getElementById(targetId);
+
+			if (targetElement) {
+				const offsetTop = targetElement.offsetTop;
+
+				window.scrollTo({
+					top: offsetTop,
+					behavior: "smooth",
+				});
+			}
+		}
+	});
+
+	
+	// Scroll to top button
+        const scrollToTopButton = document.getElementById('scrollToTopBtn');
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        scrollToTopButton.addEventListener('click', scrollToTop);
+        window.addEventListener('scroll', function () {
+            if (document.documentElement.scrollTop > 100) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+</script>
+</body>
+</html>
