@@ -100,3 +100,15 @@ function showSection(sectionId) {
     const selectedSection = document.getElementById(sectionId);
     selectedSection.classList.add('active');
   }
+
+// Cookie Consent Bar
+document.addEventListener("DOMContentLoaded", function(){
+	if (!localStorage.getItem("cookieConsent")) {
+		document.getElementById("cookieConsent").style.display = "block";
+	}
+});
+	
+function acceptCookies() {
+	localStorage.setItem("cookieConsent", "true");
+	document.getElementById("cookieConsent").style.display = "none";
+}
