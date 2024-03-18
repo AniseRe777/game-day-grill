@@ -57,8 +57,18 @@ p {
 }
 
 .highlight-link {
-	float: right;
-	color: #d71e2d;
+/*	float: right;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	color:  #f9f9f9;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "lato", sans-serif;
+	background-color: #d71e2d;
 }
 
 /* Dropdown in Navbar */
