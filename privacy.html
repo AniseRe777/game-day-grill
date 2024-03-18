@@ -85,49 +85,6 @@
 	
 <!-- Scroll to top -->
 	<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-	
-<script>
-	// Smooth scrolling effect
-	document.addEventListener("DOMContentLoaded", function () {
-		const links = document.querySelectorAll("a");
-		links.forEach((link) => {
-			link.addEventListener("click", smoothScroll);
-		});
 
-		function smoothScroll(e) {
-			e.preventDefault();
-
-			const targetId = this.getAttribute("href").substring(1);
-			const targetElement = document.getElementById(targetId);
-
-			if (targetElement) {
-				const offsetTop = targetElement.offsetTop;
-
-				window.scrollTo({
-					top: offsetTop,
-					behavior: "smooth",
-				});
-			}
-		}
-	});
-
-	
-	// Scroll to top button
-        const scrollToTopButton = document.getElementById('scrollToTopBtn');
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-        scrollToTopButton.addEventListener('click', scrollToTop);
-        window.addEventListener('scroll', function () {
-            if (document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
-            } else {
-                scrollToTopButton.style.display = 'none';
-            }
-        });
-</script>
 </body>
 </html>
